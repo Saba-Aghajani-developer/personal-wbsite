@@ -1,0 +1,632 @@
+body {
+  overflow-x: hidden;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #13293e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fdf0d5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fdf0d5;
+}
+
+main {
+  background-color: #041C32;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  main > .main-box {
+    min-height: auto !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  main > .main-box {
+    height: 100vh;
+  }
+}
+main > .main-box .background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(0.9);
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  main > .main-box .background {
+    display: flex;
+  }
+}
+main .main-box {
+  overflow-x: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  main .main-box > section {
+    height: auto !important;
+    overflow-x: hidden;
+    display: flex;
+  }
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section {
+    width: 80%;
+    height: 75% !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main-box > section {
+    height: 88% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .main-box > section .left-side {
+    width: 100%;
+    height: 95vh;
+  }
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .left-side {
+    width: 45%;
+    height: 100%;
+    padding: 0 !important;
+    position: relative;
+    z-index: 200;
+  }
+}
+main .main-box > section .left-side > nav {
+  border-radius: 7px;
+  z-index: 1;
+  top: 0;
+}
+@media screen and (max-width: 768px) {
+  main .main-box > section .left-side > nav {
+    position: fixed !important;
+  }
+}
+main .main-box > section .left-side > nav ul {
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 5px rgb(0, 0, 0);
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .left-side > nav ul {
+    border-radius: 7px;
+  }
+}
+main .main-box > section .left-side > nav ul > li {
+  background-color: #041C32;
+  border: 1px solid #13293e;
+  overflow: hidden;
+  color: #fdf0d5;
+  transition: 0.4s;
+}
+main .main-box > section .left-side > nav ul > li:hover {
+  background-color: #fdf0d5;
+}
+main .main-box > section .left-side > nav ul > li:hover i {
+  color: #041C32;
+}
+main .main-box > section .left-side > nav ul > li:hover a {
+  color: #041C32;
+}
+main .main-box > section .left-side > nav ul > li > a > i {
+  font-size: 16px !important;
+  color: #fdf0d5;
+  transition: 0.4s;
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .left-side > nav ul > li {
+    height: 25% !important;
+    width: 100% !important;
+  }
+  main .main-box > section .left-side > nav ul > li:first-of-type {
+    border-radius: 7px 7px 0 0;
+  }
+  main .main-box > section .left-side > nav ul > li:last-of-type {
+    border-radius: 0 0 7px 7px;
+  }
+}
+main .main-box > section .left-side > nav ul > li > a {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fdf0d5;
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  main .main-box > section .left-side > nav {
+    width: 100%;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .left-side > nav {
+    width: 70px;
+    height: 75%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+main .main-box > section .left-side > article {
+  position: absolute;
+  background-color: #041C32;
+}
+@media screen and (max-width: 768px) {
+  main .main-box > section .left-side > article {
+    width: 100%;
+    height: calc(100% - 70px);
+    height: 85vh;
+    top: 70px;
+  }
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .left-side > article {
+    width: calc(100% - 70px);
+    height: 100%;
+    right: 20px;
+    top: -20px;
+    border-radius: 7px;
+  }
+}
+main .main-box > section .left-side > article > section {
+  position: absolute;
+  background-color: #041C32;
+  overflow: hidden;
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .left-side > article > section {
+    left: 20px;
+    top: 20px !important;
+    box-shadow: 5px 5px 10px 5px rgb(0, 0, 0);
+    border-radius: 7px;
+  }
+}
+main .main-box > section .left-side > article > section > .saba {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  animation: anime-bg 10s infinite;
+}
+@keyframes anime-bg {
+  0% {
+    background-image: url(../img/2.jpg);
+  }
+  25% {
+    background-image: url(../img/2.jpg);
+  }
+  55% {
+    background-image: url(../img/1.jpg);
+  }
+  75% {
+    background-image: url(../img/1.jpg);
+  }
+  100% {
+    background-image: url(../img/2.jpg);
+  }
+}
+main .main-box > section .left-side > article > section > .saba > .up {
+  height: 45%;
+}
+main .main-box > section .left-side > article > section > .saba > .down {
+  height: 55%;
+  border-radius: 30% 30% 0 0;
+  background: #fdf0d5;
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row > figure > img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #041C32;
+  transform: translate(-50%, -35%);
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row > figure::before {
+  content: "";
+  width: 140px;
+  height: 140px;
+  background-color: #041C32;
+  opacity: 80%;
+  border-radius: 50%;
+  transform: translate(40%, -27%);
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row > div {
+  margin-top: -20px;
+  height: 75px;
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row > div > h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row > div > h4 {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row ul {
+  list-style-type: none;
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row ul > li:hover i {
+  scale: 2;
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row ul > li > a {
+  text-decoration: none;
+}
+main .main-box > section .left-side > article > section > .saba > .down > .row ul > li > a > i {
+  color: #041C32;
+  font-size: 20px;
+  transition: 0.4s;
+}
+main .main-box > section .right-side {
+  padding: 0 !important;
+  background: #041C32;
+  border-radius: 0 7px 7px 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .right-side::-webkit-scrollbar-thumb {
+    background-color: #fdf0d5 !important;
+  }
+}
+main .main-box > section .right-side * {
+  color: #fdf0d5;
+}
+main .main-box > section .right-side .icon-hand {
+  font-weight: 900 !important;
+  font-size: 30px;
+  transform-origin: 100% 100%;
+}
+@media screen and (max-width: 768px) {
+  main .main-box > section .right-side {
+    width: 100%;
+    height: 88%;
+  }
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .right-side {
+    width: 55%;
+    height: 95%;
+    position: relative;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .right-side > section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+main .main-box > section .right-side > section .persent {
+  transform: translateX(85%);
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(1) > h2 {
+  border-bottom: 1px solid #13293e;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(1) > h4,
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(1) p {
+  font-size: 18px;
+  font-weight: 100;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(1) p {
+  line-height: 30px;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(1) > div {
+  font-weight: 200;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(1) > div:last-of-type {
+  border-bottom: 1px solid #13293e;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > h2 {
+  border-bottom: 1px solid #13293e;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > h4 {
+  font-size: 20px;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .html {
+  position: relative;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .html .html-persent {
+  position: absolute;
+  left: 62%;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .html > h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .html > div {
+  width: 80%;
+  height: 5px;
+  background-color: wheat;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .html > div::after {
+  content: "";
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff440b;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .css .css-persent {
+  position: absolute;
+  left: 47%;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .css > h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .css > div {
+  width: 80%;
+  height: 5px;
+  background-color: wheat;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .css > div::after {
+  content: "";
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff440b;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .sass .sass-persent {
+  position: absolute;
+  left: 38%;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .sass > h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .sass > div {
+  width: 80%;
+  height: 5px;
+  background-color: wheat;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .sass > div::after {
+  content: "";
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff440b;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .bootstrap .bootstrap-persent {
+  position: absolute;
+  left: 32%;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .bootstrap > h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .bootstrap > div {
+  width: 80%;
+  height: 5px;
+  background-color: wheat;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .bootstrap > div::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff440b;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .tailwind .tailwind-persent {
+  position: absolute;
+  left: 32%;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .tailwind > h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .tailwind > div {
+  width: 80%;
+  height: 5px;
+  background-color: wheat;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .tailwind > div::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff440b;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .wordpress .wordpress-persent {
+  position: absolute;
+  left: 55%;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .wordpress > h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .wordpress > div {
+  width: 80%;
+  height: 5px;
+  background-color: wheat;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) > div:first-of-type > .row > .wordpress > div::after {
+  content: "";
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff440b;
+}
+main .main-box > section .right-side > section:first-of-type > .row:nth-of-type(2) .front {
+  font-size: 16px;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge-border {
+  border-top: 1px solid #13293e;
+  border-bottom: 1px solid #13293e;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge {
+  height: auto;
+  font-size: 16px;
+  font-weight: 200;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  main .main-box > section .right-side > section:first-of-type .knowledge {
+    font-size: 12px !important;
+  }
+  main .main-box > section .right-side > section:first-of-type .knowledge:last-of-type {
+    padding: 0px !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .right-side > section:first-of-type .knowledge:first-of-type {
+    border-right: 1px solid #13293e;
+  }
+  main .main-box > section .right-side > section:first-of-type .knowledge:last-of-type {
+    border-bottom: 1px solid #041C32;
+  }
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .knowledge:first-child > div {
+  transition: 0.4s;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .knowledge:first-child > div:hover {
+  font-weight: 600;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .education-date {
+  border: 1px solid rgba(253, 240, 213, 0.7843137255);
+  font-weight: 100;
+  border-radius: 7px;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .Parnian {
+  width: 80%;
+  height: 40px;
+  transition: 0.4s;
+  border-radius: 7px;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .Parnian:hover a {
+  text-decoration: underline;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .Parnian > a {
+  color: #fdf0d5;
+  text-decoration: none;
+}
+@media screen and (min-width: 769px) {
+  main .main-box > section .right-side > section:first-of-type .knowledge .languages {
+    border-top: 1px solid #13293e;
+  }
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .languages > div > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ff440b;
+}
+main .main-box > section .right-side > section:first-of-type .knowledge .languages > div > div:nth-of-type(4), main .main-box > section .right-side > section:first-of-type .knowledge .languages > div > div:last-of-type {
+  background-color: #fdf0d5;
+}
+main .main-box > section .right-side > section:first-of-type .work h2 {
+  font-size: 30px;
+  border-bottom: 1px solid #13293e;
+}
+main .main-box > section .right-side > section:first-of-type .work a {
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+main .main-box > section .right-side > section:first-of-type .work figure {
+  height: auto;
+}
+main .main-box > section .right-side > section:first-of-type .work figure img {
+  transition: 0.4s;
+  box-shadow: 5px 5px 20px black;
+}
+main .main-box > section .right-side > section:first-of-type .work figure > figcaption > a {
+  font-size: 20px;
+}
+main .main-box > section .right-side > section:first-of-type .work figure:hover a {
+  text-decoration: underline;
+}
+main .main-box > section .right-side > section:first-of-type .work figure:hover img {
+  transform: scale(0.9);
+}
+main .main-box > section .right-side > section:first-of-type .work .github > a {
+  text-decoration: none;
+  transition: 0.4s;
+  font-size: 18px;
+}
+main .main-box > section .right-side > section:first-of-type .work .github > a:hover {
+  text-decoration: underline;
+}
+main .main-box > section .right-side > section:first-of-type .contact {
+  border-top: 1px solid #13293e;
+  border-bottom: 1px solid #13293e;
+  font-size: 25px;
+}
+main .main-box > section .right-side > section:first-of-type #contact .scale:hover i {
+  border: 1px solid #fdf0d5;
+}
+main .main-box > section .right-side > section:first-of-type #contact a {
+  text-decoration: none;
+}
+main .main-box > section .right-side > section:first-of-type #contact a > i {
+  font-size: 25px;
+  transition: 0.4s;
+  border-radius: 7px;
+}
+main .main-box > section .right-side > section:first-of-type #contact .end-part {
+  border-top: 1px solid #13293e;
+}
+main .main-box > section .right-side > section:first-of-type #contact .form-control {
+  background-color: transparent !important;
+  border-bottom: 1px solid #13293e;
+  border: none;
+  border-bottom: 1px solid #13293e;
+}
+main .main-box > section .right-side > section:first-of-type #contact .form-control::-moz-placeholder {
+  color: #fdf0d5;
+}
+main .main-box > section .right-side > section:first-of-type #contact .form-control::placeholder {
+  color: #fdf0d5;
+}
+main .send {
+  background-color: #ff440b;
+}/*# sourceMappingURL=master.css.map */
